@@ -1,6 +1,8 @@
 Bash lesson for beginners
 ========================
 
+My apoligies, for now these lessons are mainly short notes for an instructor, still they have all the commands
+covered in the lessons and links to the scripts used.
 More extended version of the material covered here on [Software Carpentry](http://software-carpentry.org/v5/)
 
 ## Introduction
