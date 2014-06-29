@@ -1,6 +1,8 @@
 Bash lesson for beginners
 ========================
 
+More extended version of the material covered here on [Software Carpentry](http://software-carpentry.org/v5/)
+
 ## Introduction
 
 What it is? command line text only interface to filesystem (like file manager GUI) + execute commands on files (like double clicking or open with menu in file manager GUI)
