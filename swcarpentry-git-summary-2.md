@@ -21,6 +21,8 @@ show up on the web interface
 ## Branching
 http://software-carpentry.org/v5/novice/extras/01-branching.html
 
+Code in master should always work!
+
 * create new branch `test-num_threads`
 * develop there
 * merge back to master: `git checkout master` `git merge test-num_threads`
