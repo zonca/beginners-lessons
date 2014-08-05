@@ -7,8 +7,8 @@ http://software-carpentry.org/v5/novice/git/01-backup.html
 
 Use your work email address
 
-    $ git config --global user.name "Vlad Dracula"
-    $ git config --global user.email "vlad@tran.sylvan.ia"
+    $ git config --global user.name "Your Name"
+    $ git config --global user.email "your@email.com"
     $ git config --global color.ui "auto"
     $ git config --global core.editor "nano"
     
