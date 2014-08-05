@@ -1,4 +1,6 @@
-Git reference: http://software-carpentry.org/v5/novice/ref/02-git.html
+* Git reference: http://software-carpentry.org/v5/novice/ref/02-git.html
+* Show current git branch in your bash prompt: https://github.com/magicmonty/bash-git-prompt
+* Any questions? [Open an issue in the repository](https://github.com/zonca/beginners-lessons/issues/new)
 
 Software Carpentry lesson that covers first part of the class:
 http://software-carpentry.org/v5/novice/git/01-backup.html
