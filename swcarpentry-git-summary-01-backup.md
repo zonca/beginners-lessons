@@ -1,3 +1,8 @@
+Git reference: http://software-carpentry.org/v5/novice/ref/02-git.html
+
+Software Carpentry lesson that covers first part of the class:
+http://software-carpentry.org/v5/novice/git/01-backup.html
+
 ## Setting up
 
 Use your work email address
@@ -51,6 +56,8 @@ Other commits:
     git diff HEAD~2
     git log 
     git diff refspec
+    
+    git tag -a paper-submitted -m "Paper submitted to Journal"
 
 ## Recovering Old Versions
 
@@ -60,3 +67,55 @@ Other commits:
 ## Ignoring things
 
     nano .gitignore
+    
+## Collaborating
+
+http://software-carpentry.org/v5/novice/git/02-collab.html
+
+* Open account on github
+* Follow instructions for adding remote and pushing
+
+Exercise: add other source files, commit locally, push to github and check they
+show up on the web interface
+
+* clone to another folder
+* make change in other folder and push (Create README.md)
+
+## Conflicts
+
+http://software-carpentry.org/v5/novice/git/03-conflict.html
+
+* Make 2 conflicting changes in the two local clones (change printf phrase)
+* push one
+* try to push other
+* `git pull origin master`
+* fix merge conflict by modifying file, adding and committing
+* `git push origin master`
+
+## Branching
+http://software-carpentry.org/v5/novice/extras/01-branching.html
+
+Code in master should always work!
+
+* create new branch `test-num_threads`
+* develop there
+* Now decide you want to make other changes, so go back to master and create an isolated branch:
+
+        git checkout master
+        git checkout -b rename-np
+        # make changes
+        # merge them to master
+        git checkout master
+        git merge rename-np
+        
+* Now go back to your feature branch and finish implementation
+
+        git checkout test-num_threads
+        git commit -am "added num_threads"
+
+* Need to incorporate new changes from master to the feature branch
+
+        git merge master
+        
+* push branch to github `git push origin test-num_threads`
+* create pull request with web interface on github
